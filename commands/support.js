@@ -29,19 +29,16 @@ module.exports = {
   run: async (client, interaction) => {
     try {
 
-      const supportServerLink = "https://discord.gg/xQF9f9yUEM";
-      const githubLink = "https://github.com/GlaceYT";
-      const replitLink = "https://replit.com/@GlaceYT";
-      const youtubeLink = "https://www.youtube.com/@GlaceYT";
+      const supportServerLink = "https://discord.gg/minebeach";
         const embed = new EmbedBuilder()
             .setColor('#b300ff')
             .setAuthor({
               name: 'Support Server',
-              iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1230824519220985896/6280-2.gif?ex=6638ae28&is=66375ca8&hm=13e4a1b91a95b2934a39de1876e66c11711c7b30ac1a91c2a158f2f2ed1c2fc6&', 
-              url: 'https://discord.gg/xQF9f9yUEM'
+              iconURL: 'https://images-ext-1.discordapp.net/external/7I2GVU3LwPx99ogfUNY8UrmYxByIV6rbSrQ-cHtc9uI/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/847339790872870932/497c0dde1dd73a95fcd5959d93f1c725.png?format=webp&quality=lossless&width=204&height=204', 
+              url: 'https://discord.gg/minebeach'
           })
-            .setDescription(`➡️ **Join our Discord server for support and updates:**\n- Discord - ${supportServerLink}\n\n➡️ **Follow us on:**\n- GitHub - ${githubLink}\n- Replit - ${replitLink}\n- YouTube - ${youtubeLink}`)
-            .setImage('https://cdn.discordapp.com/attachments/1113800537402527903/1236803979996958740/11.png?ex=663956f7&is=66380577&hm=3b3c19a11adcb979517a133f2907f671305d23f1f5092cf7df043e6d5cab07bc&')
+            .setDescription(`➡️ **Join our Discord server for support and updates:**\n- Discord - ${supportServerLink}\n`)
+            .setImage('https://tenor.com/en-GB/view/cristiano-ronaldo-celebrate-oh-yeah-gif-11515686')
             .setTimestamp();
 
       return interaction.reply({ embeds: [embed] });
